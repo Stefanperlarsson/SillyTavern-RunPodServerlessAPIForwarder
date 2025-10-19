@@ -1,0 +1,35 @@
+{
+    "name": "sillytavern_runpod_serverless_api_forwarder",
+    "version": "0.0.1",
+    "description": "Server plugin for SillyTavern using Discord RPC",
+    "main": "dist/index.js",
+    "type": "commonjs",
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build": "webpack --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Stefanperlarsson/SillyTavern-RunPodServerlessAPIForwarder.git"
+    },
+    "keywords": [
+        "sillytavern"
+    ],
+    "author": "StefanPerLarsson",
+    "license": "AGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/Stefanperlarsson/SillyTavern-RunPodServerlessAPIForwarder/issues"
+    },
+    "homepage": "https://github.com/Stefanperlarsson/SillyTavern-RunPodServerlessAPIForwarder",
+    "dependencies": {
+        "chalk": "^4.1.2"
+    },
+    "overrides": {
+        "node-fetch": {
+            "whatwg-url": "^14.0.0"
+        }
+    },
+    "devDependencies": {
+        "typescript": "^5.7.2"
+    }
+}
